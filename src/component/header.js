@@ -20,9 +20,9 @@ function Header(){
    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
      <div className="nav-menu navbar-nav navItems">
      <Link className="navbar-item nav-item nav-link active" to="/performance"><HoverText>Performance </HoverText><span className="sr-only">(current)</span></Link>
-     <Link className="navbar-item nav-item nav-link active" to="/physio"><HoverText>Physio </HoverText><span class="sr-only">(current)</span></Link>
-     <Link className="navbar-item nav-item nav-link active" to="/blog"><HoverText>Blog </HoverText><span class="sr-only">(current)</span></Link>
-     <Link className="navbar-item nav-item nav-link active" to="/about"><HoverText>About us </HoverText><span class="sr-only">(current)</span></Link>
+     <Link className="navbar-item nav-item nav-link active" to="/physio"><HoverText>Physio </HoverText><span className="sr-only">(current)</span></Link>
+     <Link className="navbar-item nav-item nav-link active" to="/blog"><HoverText>Blog </HoverText><span className="sr-only">(current)</span></Link>
+     <Link className="navbar-item nav-item nav-link active" to="/about"><HoverText>About us </HoverText><span className="sr-only">(current)</span></Link>
      </div>
      </div>
    

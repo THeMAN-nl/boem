@@ -14,8 +14,8 @@ function Cards() {
       <img className="fitgirl" src={fitgirl} alt="fit girl" />
         <h5 className="card-items white-text card-title"> Performance</h5>
         <p className="card-items white-text card-text">Achieve your fitness goals with our guidance.</p>
-        <a href="#" class="card-items white-btn btn btn-outline-light">learn more</a>
-        <a href="#" class="card-items white-btn btn btn-light">Make an appointment</a>
+        <a href="#" className="card-items white-btn btn btn-outline-light">learn more</a>
+        <a href="#" className="card-items white-btn btn btn-light">Make an appointment</a>
       </div>
     </div>
   </div>
@@ -24,7 +24,7 @@ function Cards() {
       <img className="girl"  src={girl} alt="fit girl" />
         <h5 className="card-items  card-title">Boem Life</h5>
         <p className="midcard-text card-text">Check our blog for fitness tips & tricks.See What our community is doing</p>
-        <a href="#" class=" btn btn-outline-dark">learn more</a>
+        <a href="#" className=" btn btn-outline-dark">learn more</a>
       </div>
   </div>
   <div className="revelidatie-card  col-lg-4 col-md-6">
@@ -33,8 +33,8 @@ function Cards() {
       <img className="girl"  src={fysio} alt="fit girl" />
         <h5 className="card-items white-text card-title">Physio</h5>
         <p className="card-items white-text card-text">Feel fresh and green again.</p>
-        <a href="#" class="white-btn card-items btn btn-outline-light">learn more</a>
-        <a href="#" class="card-items white-btn btn btn-light">Make an appointment</a>
+        <a href="#" className="white-btn card-items btn btn-outline-light">learn more</a>
+        <a href="#" className="card-items white-btn btn btn-light">Make an appointment</a>
       </div>
     </div>
   </div>

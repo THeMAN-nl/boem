@@ -34,18 +34,20 @@ app.get('/', (req, res) => {
 
 app.post('/post', function(req, res) {
   console.log(req.body)
-  const Post = new Post({ 
+  const post = new Post({ 
     title: req.body.title,
     text:req.body.text,
     date:req.body.date,
     
    });
-   Post.save()
+   post.save()
 });
 
 app.get('/posting', (req, res) => {
- res.json({title:'First post',text:'This is a wider card with supporting text below as a natural lead-in to additional content.', topic:'workout'})
- 
+//  res.json({title:'First post',text:'This is a wider card with supporting text below as a natural lead-in to additional content.', topic:'workout'},)
+ Post.findOne({title:'title'}, function (err, docs) {
+  res.json(docs)
+})
 });
 
 

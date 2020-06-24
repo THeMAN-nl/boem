@@ -1,49 +1,47 @@
-import React,{useState, Component} from 'react';
+import React,{useState} from 'react';
 import Header from "../component/header"
 import Footer from '../component/footer'
-const bodyParser = require('body-parser')
+
 const axios = require('axios').default;
 
 function Blog() {
   const [test2, setTest2] = useState([]);
 
-  fetch('http://localhost:5000/posting')
-  .then(response => response.json())
-  .then(data => setTest2(data));
-
-  // useEffect(() => {
-  // do something
-  // }, [test2])
+ 
   
-// axios.get('/user?ID=12345')
-// .then(function (response) {
-//   // handle success
-//   console.log(response);
-// })
-// .catch(function (error) {
-//   // handle error
-//   console.log(error);
-// })
-// .finally(function () {
-//   // always executed
-// });
+axios.get('http://localhost:5000/posting')
+.then(function (response) {
+  // handle success
+  setTest2({
+    title:response.data.title,
+    topic:response.data.date,
+    text:response.data.text,})
+  // console.log(response);
+})
+.catch(function (error) {
+  // handle error
+  console.log(error);
+})
+.finally(function () {
+  // always executed
+});
 
-  const test =[{title:'First post',text:'This is a wider card with supporting text below as a natural lead-in to additional content.', topic:'workout'},{title:'Featured post',text:'This is a wider card with supporting text below as a natural lead-in to additional content.', topic:'diet'}]
- console.log(test2)
-  
+ 
+  // console.log(test3)
   return (
     <div className="blog">
      <Header /> 
-     {test2.map(obj=>
+     
+     
     
      <div className="row ">
     <div className="col-md">
       <div className="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div className="col p-4 d-flex flex-column position-static">
-          <strong className="d-inline-block mb-2 text-primary">{obj.topic}</strong>
-          <h3 className="mb-0">{obj.title}</h3>
+          <strong className="d-inline-block mb-2 text-primary">{test2.date}</strong>
+          <h3 className="mb-0">{test2.title}</h3>
           <div className="mb-1 text-muted">Nov 12</div>
-          <p className="card-text mb-auto">{obj.text}</p>
+          <p className="card-text mb-auto">{test2.text}</p>
           <a href="#" className="stretched-link">Continue reading</a>
         </div>
         <div className="col-auto d-none d-lg-block">
@@ -52,7 +50,7 @@ function Blog() {
       </div>
     </div>
     </div>
-    )}
+    
      <Footer />
     </div>
   );

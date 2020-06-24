@@ -59,7 +59,7 @@ function resetForm(){
               </tr>
               <tr>
                   <td> date:</td>
-                  <td><input type='text' id="date-area" name="mailArea" value={date} onChange={handleDate} /></td>
+                  <td><input type='text' id="date-area" name="dateArea" value={date} onChange={handleDate} /></td>
               </tr>
               <tr>
                   <td> text:</td>
