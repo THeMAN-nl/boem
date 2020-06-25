@@ -2,6 +2,7 @@
 fitness website
 
 The boem Project is build with mern stack.
+
 server.js is de backend page 
 
 The other maps are client side components
