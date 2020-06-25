@@ -10,4 +10,4 @@ The other maps are client side components
 I managed to make the client side communicate with the backend. 
 Fetch blogpost from mongoDB and render it.
 
-To see how website looks like click--> reactapp- google chrome ---> view raw
+To see how website looks like click--> React App - Google chrome ---> view raw
