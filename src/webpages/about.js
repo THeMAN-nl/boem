@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from "../component/header"
-import Button from 'react-bootstrap/Button';
 import Footer from '../component/footer'
 import runman from "../component/img/runman.jpg"
 import Main from '../component/main'

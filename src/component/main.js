@@ -9,7 +9,7 @@ function Main(props){
         <h1>{props.title}</h1>
         <h3>{props.subtitle}</h3>
         <p>{props.text} </p>
-        <a href="#" className="card-items white-btn btn btn-danger">Make an appointment</a>  
+        <a href="/" className="card-items white-btn btn btn-danger">Make an appointment</a>  
     </div>
 
    <div className= "mainImg" >

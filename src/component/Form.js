@@ -21,7 +21,7 @@ function Form(props){
         setDate(event.target.value);
 
     };
-
+  
   function submitForm(e){
     e.preventDefault()
 
@@ -47,6 +47,7 @@ function resetForm(){
   setDate('')
   setValue('')
 }
+
     return (
         <form id="form" onSubmit={submitForm} method="POST">
           <h1 className='skills-text'> Create blog post </h1>

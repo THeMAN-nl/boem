@@ -38,7 +38,7 @@ function Pricing() {
                         feature E
                         
                     </div>
-                    <a href="#" className="card-items white-btn btn btn-outline-danger">Make an appointment</a>
+                    <a href="/" className="card-items white-btn btn btn-outline-danger">Make an appointment</a>
                 </div>
                     
                 <div  className="price-column popular">
@@ -75,7 +75,7 @@ function Pricing() {
                         feature E
                         
                     </div>
-                    <a href="#" class="card-items white-btn btn btn-light">Make an appointment</a>
+                    <a href="/" className="card-items white-btn btn btn-light">Make an appointment</a>
                 </div>
 
                 <div  className="price-column">
@@ -112,7 +112,7 @@ function Pricing() {
                         feature E
                         
                     </div>
-                    <a href="#" className="card-items white-btn btn btn-outline-danger">Make an appointment</a>
+                    <a href="/" className="card-items white-btn btn btn-outline-danger">Make an appointment</a>
                 </div>
             </section>
         </div>
